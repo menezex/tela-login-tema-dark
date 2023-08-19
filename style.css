@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleLeft {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleLeft > h1 {
+  font-size: 2vw;
+  color: #2aa46b;
+}
+
+.imagem {
+  width: 30vw;
+}
+
+.loginRight {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLogin {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.cardLogin > h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textField > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #514869;
+  color: #f0ffffde;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textField > label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.textField > input::placeholder {
+  color: #c6d5d5de;
+}
+
+.btnLogin {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+  .cardLogin {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .titleLeft > h1 {
+    display: none;
+  }
+
+  .titleLeft {
+    width: 100%;
+    height: auto;
+  }
+
+  .loginRight {
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem {
+    width: 50vw;
+  }
+
+  .cardLogin {
+  }
+}
